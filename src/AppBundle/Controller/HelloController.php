@@ -16,7 +16,12 @@ class HelloController extends Controller
     {
         // Symfony base controller provides helper methods, like redirect().
         if ($lastName == 'Gantt') {
-            $this->redirect('untrollable.com');
+            return $this->redirect('http://untrollable.com');
+        }
+
+        // Leroy is drunk, make leroy go home.
+        if ($firstName == 'Leroy' && $lastName == 'Jenkins') {
+            return $this->redirectToRoute('homepage', [], 301);
         }
 
         // Access properties of the request object.
