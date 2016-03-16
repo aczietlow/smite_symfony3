@@ -31,3 +31,5 @@ After setting up a proper vhost for symfony to access routes via url use the fol
 `var/` - Automatically created files, logs, caches, etc.
 
 `vendor/` - composer 
+
+
