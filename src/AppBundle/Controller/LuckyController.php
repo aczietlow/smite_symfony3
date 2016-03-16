@@ -8,14 +8,19 @@ use Symfony\Component\HttpFoundation\Response;
 class LuckyController
 {
     /**
-     * @Route("/lucky/number")
+     * @Route("/lucky/number/{count}")
      */
-    public function numberAction()
+    public function numberAction($count)
     {
-        $number = rand(0, 100);
+        $numbers = [];
+        for ($i = 0;$i < $count;$i++) {
+            $numbers[] = rand(0, 100);
+        }
+
+        $numbersList = implode(', ', $numbers);
 
         return new Response(
-          '<html><body>Lucky number: '.$number.'</body></html>'
+          '<html><body>Lucky number: '.$numbersList.'</body></html>'
         );
     }
 
