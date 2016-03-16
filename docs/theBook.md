@@ -34,4 +34,16 @@ After setting up a proper vhost for symfony to access routes via url use the fol
 
 ## Controller
 
-Interprets http requrests and return a Response object,
+Interprets http requests and return a Response object.
+
+The Symfony base controller provides some useful helper methods, and containers. In most cases it's easiest to just extend it. 
+
+Routes will match URL paths to a controller.
+
+Controllers are methods that are usually added to controller classes.
+
+Front controllers (app.php and app_dev.php) server as an entry point to the application. They handle initial routing and bootstrapping.
+
+#### Using console with controllers
+
+Generate controller scaffolding - `bin/console generate:controller`
