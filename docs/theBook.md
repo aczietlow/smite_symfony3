@@ -32,4 +32,6 @@ After setting up a proper vhost for symfony to access routes via url use the fol
 
 `vendor/` - composer 
 
+## Controller
 
+Interprets http requrests and return a Response object,
