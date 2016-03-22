@@ -24,6 +24,10 @@ class HelloController extends Controller
             return $this->redirectToRoute('homepage', [], 301);
         }
 
+        if ($firstName == 'Bob') {
+            throw $this->createNotFoundException('Bob doesn\'t exist');
+        }
+
         // Access properties of the request object.
         $page = $request->query->get('page', 1);
 
