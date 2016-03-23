@@ -63,3 +63,16 @@ See what services are available with console
 ## Routing
 
 Route is a mp from a URL path to a controller.
+
+Route workflow
+
+1) Route is handled by symfony front controller.
+
+2) Symfony Kernal asks the router to inspect the request
+
+3) The router matches the incoming URL to a specific route and returns the info about the route
+
+4) The symfony Kernal executes the controller, returning a Response object.
+
+Routing information is contained in the `app/config/routing.yml` file
+
