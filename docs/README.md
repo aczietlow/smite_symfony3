@@ -9,7 +9,7 @@ Track my progress of getting through the documentation.
 * ~~Installing and Configuring Symfony~~
 * ~~Create your First Page in Symfony~~
 * ~~Controller~~
-* Routing
+* Routing -- https://symfony.com/doc/current/book/routing.html#required-and-optional-placeholders
 * Creating and Using Templates
 * Configuring Symfony (and Environments)
 * The Bundle System
