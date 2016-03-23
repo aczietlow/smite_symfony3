@@ -47,3 +47,12 @@ Front controllers (app.php and app_dev.php) server as an entry point to the appl
 #### Using console with controllers
 
 Generate controller scaffolding - `bin/console generate:controller`
+
+##### Other services from within the controller
+
+The base controller provides the `get()` method for access other services, like templating, twig, validator, etc.
+
+Symfony automatically injects the request object where it is type hinted in the method.
+
+The request object has access to the session object, which can store attributes for browser sessions (human, bots, and others)
+
