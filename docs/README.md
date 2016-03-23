@@ -8,7 +8,7 @@ Track my progress of getting through the documentation.
 * ~~Symfony versus Flat PHP~~
 * ~~Installing and Configuring Symfony~~
 * ~~Create your First Page in Symfony~~
-* Controller -- https://symfony.com/doc/current/book/controller.html#rendering-templates
+* ~~Controller~~
 * Routing
 * Creating and Using Templates
 * Configuring Symfony (and Environments)

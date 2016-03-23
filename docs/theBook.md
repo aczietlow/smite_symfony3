@@ -56,3 +56,6 @@ Symfony automatically injects the request object where it is type hinted in the 
 
 The request object has access to the session object, which can store attributes for browser sessions (human, bots, and others)
 
+See what services are available with console
+
+`bin/console debug:container`
