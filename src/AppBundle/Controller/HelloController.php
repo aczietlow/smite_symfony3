@@ -31,6 +31,18 @@ class HelloController extends Controller
         // Access properties of the request object.
         $page = $request->query->get('page', 1);
 
+        // Get session object.
+        $session = $request->getSession();
+
+        // Store attributes for reuse during a later user request.
+        $session->set('foo','bar');
+
+        // Get an attribute set by another controller in another request.
+        $foobar = $session->get('foobar');
+
+        // Use a default attribute in the requested attribute doesn't exist.
+        $filters = $session->get('filters', array());
+
         return new Response('<html><body>Hello ' . $firstName . '!</body></html>');
     }
 }

@@ -44,10 +44,11 @@ class LuckyController extends Controller
           'lucky_number' => rand(0, 100),
         );
 
-        return new Response(
-          json_encode($data),
-          200,
-          array('Content-Type' => 'application/json')
-        );
+        $response = new Response(json_encode($data));
+
+        // The headers property is a HeaderBag object.
+        $response->headers->set('Content-Type', 'application/json');
+
+        return $response;
     }
 }
