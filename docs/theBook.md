@@ -59,3 +59,7 @@ The request object has access to the session object, which can store attributes 
 See what services are available with console
 
 `bin/console debug:container`
+
+## Routing
+
+Route is a mp from a URL path to a controller.
