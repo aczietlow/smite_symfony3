@@ -42,6 +42,8 @@ Routes will match URL paths to a controller.
 
 Controllers are methods that are usually added to controller classes.
 
+Controllers must follow the naming convention of using the suffix 'Action'. E.g. public function showAction().
+
 Front controllers (app.php and app_dev.php) server as an entry point to the application. They handle initial routing and bootstrapping.
 
 #### Using console with controllers
@@ -62,7 +64,7 @@ See what services are available with console
 
 ## Routing
 
-Route is a mp from a URL path to a controller.
+Route is a map from a URL path to a controller.
 
 Route workflow
 
